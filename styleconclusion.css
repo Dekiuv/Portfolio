@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e1117;
+    color: #f1f1f1;
+  }
+  /*Parte arriba*/
+  .titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #00aaff;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #0e1117;
+    border-bottom: 1px solid #222;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00aaff;
+    padding-top: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00aaff;
+  }
+  /* Caja contacto*/
+  .contact-box {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1a1e25;
+    border: 1px solid #2a2f36;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .contact-box h2 {
+    margin-bottom: 20px;
+    color: #00aaff;
+  }
+  
+  .contact-box p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+    color: #00aaff;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+   
+/*Parte abajo*/
+footer {
+    background-color: #0e1117;
+    text-align: center;
+    color: #aaa;
+    border-top: 1px solid #222;
+  }
+
+  .cv-icon i {
+    font-size: 1.4rem;
+    color: #00aaff;
+    transition: color 0.3s;
+  }
+  
+  .cv-icon i:hover {
+    color: #ffffff;
+  }
+  
