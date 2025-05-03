@@ -4,7 +4,7 @@ body {
   background-color: #0e1117;
   color: #f1f1f1;
 }
-
+/*Parte arriba*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 .nav-links a:hover {
   color: #00aaff;
 }
-
+/*Parte medio*/
 .hero {
   display: flex;
   justify-content: space-between;
@@ -94,3 +94,10 @@ body {
   50% { opacity: 0; }
 }
 
+/*Parte abajo*/
+footer {
+  background-color: #0e1117;
+  text-align: center;
+  color: #aaa;
+  border-top: 1px solid #222;
+}

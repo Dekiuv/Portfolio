@@ -1,4 +1,3 @@
-// Marca el enlace activo al hacer scroll (opcional)
 const links = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
