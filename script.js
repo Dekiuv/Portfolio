@@ -12,3 +12,38 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const typedText = document.querySelector(".typed-text");
+
+const words = ["Especialista IA", "Analista de datos", "Administrador de sistemas", "Programador", "Gestor de redes"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingDelay = 100;
+let erasingDelay = 50;
+let newWordDelay = 2000; // Tiempo visible antes de borrar
+
+function type() {
+  const currentWord = words[wordIndex];
+
+  if (!isDeleting && charIndex <= currentWord.length) {
+    typedText.textContent = currentWord.substring(0, charIndex++);
+    setTimeout(type, typingDelay);
+  } else if (isDeleting && charIndex >= 0) {
+    typedText.textContent = currentWord.substring(0, charIndex--);
+    setTimeout(type, erasingDelay);
+  } else {
+    isDeleting = !isDeleting;
+    if (isDeleting) {
+      setTimeout(type, newWordDelay); // Espera antes de borrar
+    } else {
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(type, 300);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (typedText) setTimeout(type, 500);
+});
+
