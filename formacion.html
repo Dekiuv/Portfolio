@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego | Formación y experiencia</title>
   <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/formacion.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -20,7 +20,60 @@
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
-
+  <h1 class="titulo">Formación y experiencia</h1>
+  <section class="formacion-box">
+    <div class="accordion">
+      <button class="accordion-btn">🎓 Formación académica</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Máster de FP en Inteligencia artificial y Big Data</strong> –  STUCOM Centre d'Estudis, Barcelona (2024 - 2025)</li>
+            <p><em>· Python, R, Power BI, Tableau y Git.</em></p>
+            <p><em>· Realización de varios proyectos sobre IA y Análisis de datos.</em></p>
+          <li><strong>CFGS Administración de sistemas informáticos en red</strong> – STUCOM Centre d'Estudis, Barcelona (2022 - 2024)</li>
+            <p><em>· Windows, Linux, Gestión redes, HTML, CSS, JS, PHP, SQL, Bash, Powershell y AWS.</em></p>
+            <p><em>· Realización de actividades y proyectos.</em></p>
+          <li><strong>Bachillerato Modalidad humanidades y ciencias sociales</strong> – Escola La Ginesta, Castelldefels (2020 - 2022)</li>
+        </ul>
+      </div>
+  
+      <button class="accordion-btn">📚 Certificados y cursos</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>English for IT 1</strong>  –  Cisco networking academy (2024)</li>
+          <li><strong>Python Essentials 1</strong> – Cisco networking academy (2024)</li>
+          <li><strong>Carnet conducir Clase B</strong> – DGT (2023)</li>
+        </ul>
+      </div>
+  
+      <button class="accordion-btn">💼 Experiencia laboral</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Practica en empresa</strong> – Institut Municipal d’Urbanisme - Barcelona, España ( Diciembre 2023 - Marzo 2024)</li>
+          <p><em>· Helpdesk, administrador de sistemas, gestor de redes, desarrollador de aplicaciones y mantenimiento de hardware. </em></p>
+          <li><strong>Practica en el extranjero (Erasmus+)</strong> – The Laptop Shop - Dublin, Irlanda ( Mayo 2023 - Julio 2023)</li>
+          <p><em>· Helpdesk, administrador de sistemas, gestor de redes y mantenimiento de hardware.</em></p>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script>
+    const accordions = document.querySelectorAll(".accordion-btn");
+  
+    accordions.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const isActive = content.style.display === "block";
+        
+        // Cerrar todos
+        document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
+  
+        // Mostrar solo si no estaba abierto
+        content.style.display = isActive ? "none" : "block";
+      });
+    });
+  </script>
+    
+  
 </body>
 <footer>
   <p>&copy; 2025 Diego Roque Valero. Todos los derechos reservados.</p>
