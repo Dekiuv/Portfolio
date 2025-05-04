@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diego | Mis proyectos</title>
   <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/proyectos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -21,6 +21,60 @@
     </ul>
   </nav>
 
+  <h1 class="titulo">Mis proyectos</h1>
+
+  <section class="proyectos-grid">
+    <div class="proyecto-card" onclick="abrirModal(
+      'Proyecto de Optimización de Rutas y Clusters',
+      'Este proyecto implementa algoritmos como Dijkstra y A* sobre un grafo de ciudades españolas. Incluye visualización con Folium y personalización de nodos desde una interfaz.',
+      'https://github.com/tuusuario/proyecto-rutas')">
+      <h3>Proyecto de Optimización de Rutas y Clusters</h3>
+      <p>Algoritmo de rutas eficientes...</p>
+    </div>
+
+    <div class="proyecto-card" onclick="abrirModal(
+      'Predicción meteorológica',
+      'Usa datos en tiempo real de sensores y APIs climáticas. Entrenado con modelos de regresión y redes neuronales para predecir temperaturas y precipitaciones a corto plazo.',
+      'https://github.com/tuusuario/proyecto-meteorologia')">
+      <h3>Simulador de Predicción Meteorológica con Big Data</h3>
+      <p>Modelo climático con IA...</p>
+    </div>
+
+    <div class="proyecto-card" onclick="abrirModal(
+      'Predicción de cáncer de colon',
+      'Sistema híbrido con MobileNetV2 y datos clínicos. Clasifica imágenes como benignas o malignas y predice supervivencia mediante Random Forest y SVM.',
+      'https://github.com/tuusuario/proyecto-cancer-colon')">
+      <h3>Predicción de cáncer de colon</h3>
+      <p>Clasificación de pacientes...</p>
+    </div>
+
+    <div class="proyecto-card" onclick="abrirModal(
+      'Sistema de recomendación',
+      'Incluye recomendaciones basadas en contenido, colaborativas y de reglas de asociación. Desplegado con Streamlit y conectado a base de datos real de compras.',
+      'https://github.com/tuusuario/proyecto-recomendacion')">
+      <h3>Sistema de recomendación</h3>
+      <p>Motor para e-commerce...</p>
+    </div>
+    <div class="proyecto-card" onclick="abrirModal(
+      'Sistema de optimización de rutas logísticas',
+      'Este proyecto implementa algoritmos como Dijkstra y A* sobre un grafo de ciudades españolas. Incluye visualización con Folium y personalización de nodos desde una interfaz.',
+      'https://github.com/tuusuario/proyecto-rutas')">
+      <h3>Proyecto final máster</h3>
+      <p>...</p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="cerrarModal()">&times;</span>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-descripcion"></p>
+      <a id="modal-link" href="#" target="_blank" class="modal-link">Ver en GitHub</a>
+    </div>
+  </div>
+
+  <script src="js/proyectos.js"></script>
 </body>
 <footer>
   <p>&copy; 2025 Diego Roque Valero. Todos los derechos reservados.</p>

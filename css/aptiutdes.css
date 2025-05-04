@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e1117;
+    color: #f1f1f1;
+  }
+  /*Parte arriba*/
+  .titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #00aaff;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #0e1117;
+    border-bottom: 1px solid #222;
+  }
+  
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00aaff;
+    padding-top: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00aaff;
+  }
+
+/*Parte medio*/
+.aptitudes-box {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1a1e25;
+    border: 1px solid #2a2f36;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .aptitudes-box h2 {
+    color: #00aaff;
+    margin-bottom: 15px;
+  }
+  
+  .aptitudes-iconicas ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 50px auto;
+  }
+  
+  .aptitudes-iconicas li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+  }
+  
+  .aptitudes-iconicas i {
+    color: #00aaff;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    width: 25px;
+    text-align: center;
+  }
+/*animaciones*/
+.aptitudes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .apt-card {
+    background-color: #232933;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .apt-card i {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .apt-card span {
+    font-weight: 600;
+  }
+  
+  .apt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+  
+  .apt-card::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .apt-card:hover::after {
+    opacity: 1;
+  }
+  
+/* Idiomas */
+  .idiomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 35px;
+  }
+  
+  .idioma-card {
+    background-color: #232933;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+  }
+  
+  .idioma-card img {
+    width: 40px;
+    height: 28px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+  
+  .idioma-card span {
+    display: block;
+    font-weight: 600;
+  }
+  
+  .idioma-card::after {
+    content: attr(data-nivel);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .idioma-card:hover::after {
+    opacity: 1;
+  }
+  
+  .idioma-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  }
+  
+/*Parte abajo*/
+footer {
+    background-color: #0e1117;
+    text-align: center;
+    color: #aaa;
+    border-top: 1px solid #222;
+  }
+
+  .cv-icon i {
+    font-size: 1.4rem;
+    color: #00aaff;
+    transition: color 0.3s;
+  }
+  
+  .cv-icon i:hover {
+    color: #ffffff;
+  }
