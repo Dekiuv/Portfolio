@@ -27,7 +27,7 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 
 ## 🖼️ Vista previa
 
-![Captura del portfolio](image/portfolio.png)
+![Captura del portfolio](images/portfolio.png)
 
 ---
 
