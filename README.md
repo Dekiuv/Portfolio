@@ -27,7 +27,7 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 
 ## 🖼️ Vista previa
 
-![Captura del portfolio](images/preview.png)
+![Captura del portfolio](image/portfolio.png)
 
 ---
 
@@ -42,7 +42,7 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 ├── proyectos.html
 ├── contacto.html
 ├── css/
-│   └── estilos por sección (ej. proyectos.css)
+│   └── estilos por sección
 ├── js/
 │   └── proyectos.js
 ├── images/
@@ -53,7 +53,7 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 
 ## 🔗 Enlaces
 
-- 🎯 [Portfolio online](https://tusitio.netlify.app/) *(si lo tienes desplegado)*
+- 🎯 [Portfolio online](https://tusitio.netlify.app/)
 - 🐙 [Repositorio en GitHub](https://github.com/Dekiuv/Portfolio)
 
 ---
@@ -62,12 +62,6 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 
 **Diego Roque Valero**
 
-- 📧 diego@email.com
-- 💼 [LinkedIn](https://linkedin.com/in/diego...)
+- 📧 diego1roque2@gmail.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/diego-roque-valero/)
 - 💻 [GitHub](https://github.com/Dekiuv)
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes usarlo como base para tu propio portfolio si mencionas la autoría original.
