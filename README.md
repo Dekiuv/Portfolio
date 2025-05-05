@@ -44,7 +44,7 @@ Este es mi portfolio personal desarrollado desde cero con HTML, CSS y JavaScript
 ├── css/
 │   └── estilos por sección
 ├── js/
-│   └── proyectos.js
+│   └── funciones js
 └── images/
     └── icon.png, foto, banderas, capturas, etc.
 ```
