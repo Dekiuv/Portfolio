@@ -1,5 +1,8 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0e1117;
   color: #f1f1f1;
@@ -100,4 +103,9 @@ footer {
   text-align: center;
   color: #aaa;
   border-top: 1px solid #222;
+  padding: 20px;
+}
+.wrapper {
+  flex: 1;
+
 }

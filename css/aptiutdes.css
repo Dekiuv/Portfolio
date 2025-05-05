@@ -1,9 +1,12 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #0e1117;
-    color: #f1f1f1;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e1117;
+  color: #f1f1f1;
+}
   /*Parte arriba*/
   .titulo{
     text-align: center;
@@ -192,6 +195,7 @@ footer {
     text-align: center;
     color: #aaa;
     border-top: 1px solid #222;
+    padding: 20px;
   }
 
   .cv-icon i {
@@ -202,4 +206,9 @@ footer {
   
   .cv-icon i:hover {
     color: #ffffff;
+  }
+
+  .wrapper {
+    flex: 1;
+  
   }
