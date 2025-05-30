@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 
 const typedText = document.querySelector(".typed-text");
 
-const words = ["Especialista IA", "Analista de datos", "Administrador de sistemas", "Programador junior", "Gestor de redes"];
+const words = ["Especialista Inteligencia Artificial", "Analista de Datos", "Administrador de Sistemas", "Programador", "Gestor de Redes"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
